@@ -1,0 +1,73 @@
+@import url("https://use.typekit.net/ofb4pjx.css");
+/* ^ HWT Artz Regular font ^ Like Mellow Mushroom */
+
+@import url('https://fonts.cdnfonts.com/css/axios-pro');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-slate-800;
+        @apply text-white;
+        font-family: 'Axios Pro', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 1;
+    }
+
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+
+    h5 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    p {
+        @apply text-slate-300;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+
+    .router-link-exact-active {
+        color: #FFFFFF;
+    }
+}
+
+@layer components {
+    .card {
+        @apply flex-col justify-around p-3 rounded-md bg-white shadow-md h-full;
+    }
+
+    .btn {
+        @apply bg-slate-800 text-white px-3 py-3 m-auto rounded-md text-sm inline-flex;
+    }
+
+    footer a {
+        @apply text-white;
+    }
+}
